@@ -31,7 +31,7 @@ function debounce(func, delay) {
 function displayResults(results) {
   const resultsContainer = document.getElementById("results");
   resultsContainer.innerHTML = results
-    .map((item) => <div class="result-item">${item}</div>)
+    .map((item) => `<div class="result-item">${item}</div>`)
     .join("");
 }
 
